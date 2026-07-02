@@ -1,0 +1,16 @@
+use company
+
+db.createCollection("employee")
+
+var data=[
+{"emp_name":"harika","emp_age":25,"job_role":"teacher","salary":20000},
+{"emp_name":"teja","emp_age":18,"job_role":"data analyst","salary":100000},
+{"emp_name":"kiran","emp_age":30,"job_role":"senior analyst","salary":45000},
+{"emp_name":"surya","emp_age":20,"job_role":"store assistant","salary":30000}
+]
+
+db.employee.insertMany(data)
+
+db.employee.find()
+
+db.employee.find().pretty()
